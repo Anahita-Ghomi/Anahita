@@ -1,0 +1,89 @@
+body {
+
+  font-family: Arial, sans-serif;
+  background-image: url("./Photo.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 94%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
+}
+
+.error {
+  display: block;
+  color: red;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.success {
+  display: block;
+  color: green;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  background-color: #0077ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover:not([disabled]) {
+  background-color: #005ae6;
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+input[type="email"]:invalid,
+input[type="password"]:invalid,
+input[type="tel"]:invalid {
+  border-color: red;
+}
+
+input[type="email"]:valid,
+input[type="password"]:valid,
+input[type="tel"]:valid {
+  border-color: green;
+}
